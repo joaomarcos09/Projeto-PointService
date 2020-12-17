@@ -6,4 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".JustificativaActivity">
 
+    <EditText
+        android:id="@+id/etMensagem"
+        android:layout_width="0dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Mensagem"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btAnxFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btAnxFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginBottom="297dp"
+        android:text="ANEXAR FOTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="@+id/etMensagem"
+        app:layout_constraintTop_toBottomOf="@+id/etMensagem" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="53dp"
+        android:text="VOLTAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

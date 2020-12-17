@@ -36,6 +36,13 @@ public class AdmActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        btCadusuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AdmActivity.this, CadUsuarioActivity.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
